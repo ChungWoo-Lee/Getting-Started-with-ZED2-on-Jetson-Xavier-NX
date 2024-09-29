@@ -1,6 +1,6 @@
-# ZED2 Camera Basic Setup on Jetson Nano
+# ZED2 Camera Basic Setup on Jetson Xavier NX
 
-This repository provides basic code for setting up and visualizing the ZED2 camera on Jetson Nano. Follow the steps below to configure your environment and run the code successfully.
+This repository provides basic code for setting up and visualizing the ZED2 camera on Jetson Xavier NX. Follow the steps below to configure your environment and run the code successfully.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -13,23 +13,23 @@ This repository provides basic code for setting up and visualizing the ZED2 came
 
 ## Prerequisites
 
-Before running the ZED2 camera on Jetson Nano, ensure you have the following:
-- Jetson Nano Developer Kit
+Before running the ZED2 camera on Jetson Xavier NX, ensure you have the following:
+- Jetson Xavier NX Developer Kit (16GB RAM recommended)
 - ZED2 Camera
-- JetPack installed on Jetson Nano (tested with JetPack 4.6)
+- JetPack installed on Jetson Xavier NX (tested with JetPack 4.6)
 - ZED SDK installed (latest version)
 - Python 3.7 or above
 
 ## Setup Instructions
 
 1. **Install ZED SDK:**
-   - Visit the official [ZED SDK download page](https://www.stereolabs.com/developers/release/) and download the appropriate version for Jetson Nano.
+   - Visit the official [ZED SDK download page](https://www.stereolabs.com/developers/release/) and download the appropriate version for Jetson Xavier NX.
    - After downloading, install the SDK by running:
      ```bash
      chmod +x ZED_SDK_UbuntuXX_JPXX_vX.X.X.run
      ./ZED_SDK_UbuntuXX_JPXX_vX.X.X.run
      ```
-     Replace `XX` and `X.X.X` with the correct version numbers for your Jetson Nano environment.
+     Replace `XX` and `X.X.X` with the correct version numbers for your Jetson Xavier NX environment.
    - Follow the on-screen instructions to complete the installation.
 
 2. **Install Python Dependencies:**
@@ -44,7 +44,7 @@ Before running the ZED2 camera on Jetson Nano, ensure you have the following:
      ```
 
 3. **Connect ZED2 Camera:**
-   - Plug in the ZED2 camera via USB 3.0 into your Jetson Nano.
+   - Plug in the ZED2 camera via USB 3.0 into your Jetson Xavier NX.
    - Ensure that the camera is properly detected by running:
      ```bash
      lsusb
@@ -53,10 +53,10 @@ Before running the ZED2 camera on Jetson Nano, ensure you have the following:
 ## Usage
 
 1. **Running the Example Code:**
-   - Clone this repository to your Jetson Nano:
+   - Clone this repository to your Jetson Xavier NX:
      ```bash
-     git clone https://github.com/your-username/zed2-jetson-nano-basic.git
-     cd zed2-jetson-nano-basic
+     git clone https://github.com/your-username/zed2-jetson-xavier-nx-basic.git
+     cd zed2-jetson-xavier-nx-basic
      ```
    - Run the visualization script:
      ```bash
@@ -75,10 +75,10 @@ Before running the ZED2 camera on Jetson Nano, ensure you have the following:
   If the ZED2 camera is not recognized, ensure that it is connected via USB 3.0 and run `lsusb` to verify the connection.
 
 - **Performance issues:**  
-  To improve performance on Jetson Nano, consider lowering the camera resolution or adjusting the depth mode in the SDK settings.
+  To improve performance on Jetson Xavier NX, consider lowering the camera resolution or adjusting the depth mode in the SDK settings.
 
 ## References
 
 - [Stereolabs ZED SDK Documentation](https://www.stereolabs.com/docs/)
-- [Jetson Nano Official Setup](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
+- [Jetson Xavier NX Official Setup](https://developer.nvidia.com/embedded/jetson-xavier-nx-developer-kit)
 - [Tutorial by Dohyeon (Korean)](https://dohyeon.tistory.com/19)
