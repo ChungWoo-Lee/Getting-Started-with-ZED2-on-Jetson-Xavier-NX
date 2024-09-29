@@ -3,11 +3,34 @@
 This repository provides basic code for setting up and visualizing the ZED2 camera on Jetson Xavier NX. Follow the steps below to configure your environment and run the code successfully.
 
 ## Table of Contents
+- [Requirements](#requirements)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Troubleshooting](#troubleshooting)
 - [References](#references)
+
+---
+
+## Requirements
+
+### Hardware
+- NVIDIA Jetson Xavier NX Developer Kit (16GB RAM recommended)
+- ZED2 Camera
+- USB 3.0 port for camera connection
+
+### Software
+- **JetPack SDK**: 4.6 (L4T 32.6.1)
+- **Operating System**: Ubuntu 18.04 Bionic Beaver
+- **Python**: 3.7.16
+- **CUDA**: 10.2.300
+- **cuDNN**: 8.2.1.32
+- **TensorRT**: 8.0.1
+- **OpenCV**: 4.1.1 (with CUDA: NO)
+- **GStreamer**: 1.14.5
+- **VPI (Vision Programming Interface)**: 1.1.15
+- **Vulkan**: 1.2.70
+- **NVIDIA Jetson Stats**: 4.2.11
 
 ---
 
